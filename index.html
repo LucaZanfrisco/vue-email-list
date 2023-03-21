@@ -13,7 +13,7 @@
 <body>
     <div id="app" v-cloak>
         <h1>Random Mail</h1>
-        <ul class="lista">
+        <ul class="lista" v-if="isFatch()">
             <li v-for="mail in email">{{ mail }}</li>
         </ul>
     </div>
